@@ -1,0 +1,199 @@
+.page-container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1f2937;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .custom-table th, .custom-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .custom-table th {
+    background-color: #f9fafb;
+    color: #374151;
+  }
+  
+  .status-badge {
+    background-color: #3b82f6;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .status-badge.hadir {
+    background-color: #10b981;
+  }
+  
+  .status-badge.izin {
+    background-color: #f59e0b;
+  }
+  
+  .status-badge.alpha {
+    background-color: #ef4444;
+  }
+
+  .filter-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1f2937;
+  }
+  
+  .card p {
+    margin: 4px 0;
+    color: #374151;
+    font-size: 14px;
+  }
+  
+  .akses-btn {
+    margin-top: 12px;
+    padding: 8px 12px;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .akses-btn:hover {
+    background-color: #2563eb;
+  }
+
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .stat-card {
+    flex: 1 1 160px;
+    background: #f9fafb;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    font-size: 16px;
+    color: #1f2937;
+  }
+
+  .chart-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 20px;
+  }
+  
+  .chart-box {
+    flex: 1 1 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 20px;
+  }
+
+
+/* Animasi fade-in untuk card, tabel, dan chart */
+.page-container {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.card, .data-table, .chart-box {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+/* Efek hover untuk card */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Keyframes animasi */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Tombol animasi */
+.akses-btn {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.akses-btn:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+  

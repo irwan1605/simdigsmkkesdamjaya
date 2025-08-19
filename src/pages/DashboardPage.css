@@ -1,0 +1,79 @@
+.dashboard-container {
+  padding: 10px;
+  width: 100%;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-user-info {
+  font-size: 1rem;
+  color: #555;
+}
+
+.dashboard-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dashboard-search {
+  padding: 10px;
+  flex: 1;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.dashboard-export button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background-color: #e8eaf6;
+}
+
+.dashboard-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.chart-card {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
